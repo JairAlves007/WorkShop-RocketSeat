@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Criativa</title>
+    <style>
+
+        body {
+            background: #e5e5e5;
+            color: #25282B;
+            text-align: center;
+        }
+
+        button {
+            border: none;
+            font-weight: bolder;
+            background: none;
+            color: #ff5e84;
+        }
+
+        .fat{
+            color: white;
+            background-color: #ff5e84;
+        }
+
+
+        #footer a {
+            color: #25282b;
+            text-decoration: none;
+        }
+
+        .hide{
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="img/27pdZLL - Imgur.png" alt="LogoMarca" title="LogoMarca">
+    
+    <p>
+        Ficar em casa em períodos longos, não deve ser nada fácil.
+    </p>
+
+    <p>
+        Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes,
+        livros, cursos, dicas</strong> e tudo que for necessário para tornar
+        esse momento mais interessante.
+    </p>
+
+    <p>
+        Comece clicando em <span>ver ideias</span> para ver as ideias
+        cadastradas e contribua <span>adicionando a sua ideia.</span>
+    </p>
+
+    <button>+ Adicionar Ideia</button>
+    <button class="fat">Ver Ideia</button>
+
+    <p id="footer">Com ❤ <a href="https://www.facebook.com/jair.alves.3323">Jair Alves</a></p>
+
+    <script>
+        document.querySelector('button .fat');
+        document.addEventListener('click', function(){
+            document.querySelector('#footer').classList.toggle("hide")
+
+        })
+
+
+
+
+    </script>
+</body>
+</html>
