@@ -2,7 +2,6 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Criativa</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -13,12 +12,14 @@
         <section id="intro">
             
             <header>
-                
-                <img src="img/Logo.png" alt="LogoMarca">
+                <a href="#">
+                    <img src="img/Logo.png" alt="LogoMarca">
+                </a>
             
             </header>
             
             <main>
+
                 <p>
                     Ficar em casa em períodos longos, não deve ser nada fácil.
                 </p>
@@ -30,76 +31,91 @@
                 </p>
     
                 <p>
-                    Comece clicando em <span class="destaque">ver ideias</span> para ver as ideias
-                    cadastradas e contribua <span class="destaque">adicionando a sua ideia.</span>
+                    Comece clicando em <a href="ideias.html" class="destaque">ver ideias</a> para ver as ideias
+                    cadastradas e contribua <a href="#" onclick="onOff()" class="destaque">adicionando a sua ideia.</a>
                 </p>
+            
             </main>
 
             <section id="buttons">
+                
                 <button onclick="onOff()">+ Adicionar Ideia</button>
-                <button class="fat">Ver Ideias</button>
+                <a href="ideias.html" class="button">Ver Ideias</a>
+            
             </section>
             
-            <footer>Com ❤ <a href="https://www.facebook.com/jair.alves.3323">Jair Alves</a></footer>
+            <footer>
+                Com ❤ <a href="https://www.facebook.com/jair.alves.3323" target="_blank">Jair Alves</a>
+            </footer>
 
         </section>
 
 
         <section id="last-ideas">
             <div class="idea">
-                <img
-                 src="https://image.flaticon.com/icons/svg/2729/2729007.svg"
-                 alt="Curso De Programação">
+                
+                <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Curso De Programação">
 
-                 <div class="content">
-                     <h3>Cursos de Programação</h3>
-                     <p>Estudo</p>
-                     <div class="description">
+                <div class="content">
+                    <h3>Cursos de Programação</h3>
+
+                    <p>Estudo</p>
+
+                    <div class="description">
+
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla adipisci quae quisquam repudiandae 
                         voluptates nemo aperiam, qui, neque cupiditate eaque, accusamus quidem quasi exercitationem. 
                         Ab excepturi ratione et modi.
-                     </div>
+
+                    </div>
                      
-                     <a href="#">Ir para a ideia</a>
+                    <a href="#">Ir para a ideia</a>
+                 
+                </div>
+                 
+            </div>
+
+            <div class="idea">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" alt="Exercícios">
+
+                 <div class="content">
+
+                    <h3>Exercícios</h3>
+                     
+                    <p>Saúde</p>
+                     
+                    <div class="description">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla adipisci quae quisquam repudiandae 
+                        voluptates nemo aperiam, qui, neque cupiditate eaque, accusamus quidem quasi exercitationem. 
+                        Ab excepturi ratione et modi.
+                     
+                    </div>
+                     
+                    <a href="#">Ir para a ideia</a>
+
                  </div>
                  
             </div>
 
             <div class="idea">
-                <img
-                 src="https://image.flaticon.com/icons/svg/2729/2729005.svg"
-                 alt="Exercícios">
+                <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" alt="Meditação">
 
-                 <div class="content">
-                     <h3>Exercícios</h3>
-                     <p>Saúde</p>
-                     <div class="description">
+                <div class="content">
+                    
+                    <h3>Meditação</h3>
+                    
+                    <p>Exercitar a Mente</p>
+                    
+                    <div class="description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla adipisci quae quisquam repudiandae 
                         voluptates nemo aperiam, qui, neque cupiditate eaque, accusamus quidem quasi exercitationem. 
                         Ab excepturi ratione et modi.
-                     </div>
+                    </div>
                      
-                     <a href="#">Ir para a ideia</a>
-                 </div>
+                <a href="#">Ir para a ideia</a>
                  
             </div>
-
-            <div class="idea">
-                <img
-                 src="https://image.flaticon.com/icons/svg/2729/2729027.svg"
-                 alt="Meditação">
-
-                 <div class="content">
-                     <h3>Meditação</h3>
-                     <p>Exercitar a Mente</p>
-                     <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla adipisci quae quisquam repudiandae 
-                        voluptates nemo aperiam, qui, neque cupiditate eaque, accusamus quidem quasi exercitationem. 
-                        Ab excepturi ratione et modi.
-                     </div>
-                     
-                     <a href="#">Ir para a ideia</a>
-                 </div>
                  
         </section>
 
@@ -111,6 +127,7 @@
         <div class="content">
             <h1>Nova Ideia</h1>
             <form action="">
+
                 <div class="input-wraper">
                     <label for="title">Título da ideia</label>
                     <input type="text" name="title">
@@ -128,21 +145,23 @@
             
                 <div class="input-wraper">
                     <label for="description">Descrição</label>
-                    <textarea name="description" cols="30" rows="10"></textarea>
+                    <textarea name="description" cols="30" rows="6"></textarea>
                 </div>
             
                 <div class="input-wraper">
-                    <label for="link">Link da Imagem</label>
+                    <label for="link">Link da ideia</label>
                     <input type="url" name="link">
                 </div>
             
                 <button>Salvar</button>
                 <a href="#" onclick="onOff()">X</a>
+            
             </form>
             
-            </div>
-    
         </div>
+            
+    </div>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
